@@ -1,6 +1,6 @@
 {
   "name": "exhibit-plugin-browserify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "babel": {
     "presets": [
       "es2015",
