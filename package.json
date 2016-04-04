@@ -1,5 +1,6 @@
 {
   "name": "exhibit-plugin-browserify",
+  "version": "0.1.0",
   "babel": {
     "presets": [
       "es2015",
@@ -9,9 +10,6 @@
       "transform-runtime"
     ]
   },
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "babel-runtime": "^6.6.1",
     "bluebird": "^3.3.4",
@@ -56,16 +54,18 @@
       ]
     }
   },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
   "peerDependencies": {
     "exhibit": "^0.8.3"
   },
-  "main": "dist/index.js",
   "repository": "exhibitjs/exhibit-plugin-browserify",
   "scripts": {
     "build": "del dist && babel src --out-dir dist --source-maps",
     "build:watch": "del dist && babel src --out-dir dist --watch --source-maps",
     "prepublish": "npm run build",
     "test": "test-exhibit-plugin"
-  },
-  "version": "0.1.0"
+  }
 }
