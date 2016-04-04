@@ -1,3 +1,1 @@
-module.exports = [{
-	sourceMap: false,
-}];
+module.exports = [];
