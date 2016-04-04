@@ -66,5 +66,6 @@
     "build:watch": "del dist && babel src --out-dir dist --watch --source-maps",
     "prepublish": "npm run build",
     "test": "test-exhibit-plugin"
-  }
+  },
+  "version": "0.1.0"
 }
