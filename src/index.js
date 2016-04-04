@@ -79,7 +79,7 @@ export default function () {
 		extensions: options.extensions,
 		basedir: options.cwd, // or should this be the source dir?
 		debug: options.sourceMap,
-		fullPaths: true,
+		fullPaths: false,
 		paths: [path.join(options.cwd, 'node_modules')],
 		transform: options.transforms,
 	};
